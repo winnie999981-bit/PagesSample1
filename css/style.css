@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/****** 共通基本設定
+******************************************************/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+ul {
+  padding:0;
+  list-style:none;
+}
+a:link{
+  font-size:14px;
+  font-weight:bold;
+  color:#3e3e3e;
+  text-decoration:none;
+}
+a:visited{
+  color:#3e3e3e;
+}
+a:hover{
+  color:#7e7e7e;
+}
+
+/* ヘッダー */
+.page-header h1{
+  margin: 0;
+  font-size: 12px;
+}
+.page-header .mainvisual img{
+  width:100%;
+}
+
+/* 外枠・コンテンツ中央設定  */
+.wrapper{
+  width:960px;
+  margin:0 auto;
+}
+
+/* ナビゲーション */
+.nav_main ul{
+  display: flex;
+  justify-content:space-between;
+}
+
+/* コンテンツエリア設定 */
+
+/* フッター */
+.page-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  border-top:1px dotted #000;
+}
+.page-footer .nav_footer ul{
+  margin:0;
+}
+
+.page-footer .nav_footer ul li{
+  text-align:right;
+}
+/****** トップページ
+******************************************************/
+/* メインコンテンツエリア */
+.items h2{
+  font-size:42px;
+  font-weight:normal;
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  margin:100px 0;
+}
+.item:nth-child(odd){
+  flex-direction:row-reverse;
+}
+.item .item-img,
+.item .item-text {
+  width:48%;
+}
+.item .item-img img {
+  width:100%;
+}
+
+/* ニュースエリア */
+.news{
+  width:800px;
+  margin:0 auto 100px;
+}
+.news ul{
+  list-style:square;
+  padding-left:40px;
+}
+
+
+/****** メニューページ
+******************************************************/
+.main_other h2{
+  font-size:42px;
+  font-weight:normal;
+}
+
+
+.menu-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+}
+.menu-nav .menu-img,
+.menu-nav .nav_menu{
+  width:48%;
+}
+.menu-nav .menu-img img{
+  width:100%;
+}
+
+
+.nav_menu ul li{
+  margin:10px;
+}
+.nav_menu ul li a{
+  font-size:20px;
+  font-weight:normal;
+}
+
+.menu-main{
+  margin:100px 0;
+  text-align:center;
+}
+.menu-main h3{
+  font-size:38px;
+  font-weight:normal;
+}
+.menu-main ul li{
+  margin: 10px 0;
+}
+
+
+/****** アクセスページ
+******************************************************/
+.info{
+  margin:40px 0 100px;
+}
+
+.info table th{
+  padding-right:20px;
+  text-align:left;
+}
+
+
+/****** コンタクトページ
+******************************************************/
+
+
+/* お問い合わせフォーム */
+.form ul {
+  width:600px;
+}
+.form ul li{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  margin:10px;
+}
+.form label{
+  display:inline-block;
+  width:20%;
+}
+.form input,
+.form textarea{
+  width:75%;
+  padding:10px;
+  border:1px solid #3e3e3e;
+  border-radius:5px;
+}
+.form input:focus,
+.form textarea:focus{
+  outline:2px solid #3f312d;
+  background-color: #d8cccb;
+}
+.form button{
+  width:20%;
+  padding:8px;
+  border-radius: 5px;
+  background-color:#3f312d;
+  color:#fff;
+  cursor:pointer;
+}
+.form button:hover{
+  background-color:#d8cccb;
+  color:#3f312d;
+}
